@@ -13,3 +13,4 @@ apt-get install pritunl -y
 systemctl start pritunl
 systemctl enable pritunl
 EOF
+/ \ n \ Z /
