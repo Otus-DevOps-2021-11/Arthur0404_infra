@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ssh подключение к серверу через bastion одной командой:
 ssh -i ~/.ssh/appuser -A -t appuser@<hop server> ssh -A <target server>
 
