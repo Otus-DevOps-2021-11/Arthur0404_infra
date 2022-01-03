@@ -13,12 +13,14 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org apt-transport-https ca-certificates
 sudo systemctl start mongod
 sudo systemctl enable mongod
+![img.png](img.png)
 sudo apt-get update
 sudo apt-get install git
 git clone -b monolith https://github.com/express42/reddit.git
 cd reddit && bundle install
 puma -d
-
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
 =================================================================================
 
 Домашнее задание по подключению ВПН и установки ВМ
