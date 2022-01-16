@@ -1,0 +1,10 @@
+cloud_id = "cloud"
+folder_id = "folder"
+zone = "ru-central1-a"
+image_id = "image"
+public_key_path = "public"
+subnet_id = "sybnet"
+service_account_key_file = "key.json"
+token_id="token"
+private_key="private"
+instances_count = 1
