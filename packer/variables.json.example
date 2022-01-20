@@ -1,4 +1,5 @@
 {
-    "folder_id": "b5gp05ci0bnivqe8p21h",
-    "service_account_key_file": "key.json"
+    "yc_folder": "b5gp05ci0bnivqe8p21h",
+    "service_account_key_file": "key.json",
+     "yc_subnet": "5u6n3t1d"
 }
