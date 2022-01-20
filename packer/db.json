@@ -3,17 +3,18 @@
         {
             "type": "yandex",
             "service_account_key_file": "key.json",
-            "folder_id": "b1gahgbsok49rflgqk3m",
+            "folder_id": "{{user `yc_folder`}}",
             "source_image_family": "ubuntu-1604-lts",
-            "image_name": "reddit-base-{{timestamp}}",
+            "image_name": "db-base-{{timestamp}}",
             "image_family": "reddit-base",
             "ssh_username": "ubuntu",
-            "platform_id": "standard-v1",
-            "use_ipv4_nat": "true"
+            "platform_id": "standard-v3",
+            "subnet_id": "{{user `yc_subnet`}}",
+            "use_ipv4_nat": true
         }
     ],
     "provisioners": [
-         {
+        {
             "type": "ansible",
             "playbook_file": "ansible/packer_db.yml"
         }
