@@ -2,14 +2,13 @@
     "builders": [
         {
             "type": "yandex",
-            "service_account_key_file": "{{user `yc_serv_acct_key`}}",
-            "folder_id": "{{user `yc_folder`}}",
+            "service_account_key_file": "key.json",
+            "folder_id": "folder_id",
             "source_image_family": "ubuntu-1604-lts",
             "image_name": "reddit-base-{{timestamp}}",
             "image_family": "reddit-base",
             "ssh_username": "ubuntu",
             "platform_id": "standard-v3",
-            "subnet_id": "{{user `yc_subnet`}}",
             "use_ipv4_nat": true
         }
     ],
