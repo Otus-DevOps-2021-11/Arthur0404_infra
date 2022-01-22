@@ -2,21 +2,20 @@
     "builders": [
         {
             "type": "yandex",
-            "service_account_key_file": "key.json",
-            "folder_id": "b1gahgbsok49rflgqk3m",
+            "service_account_key_file": "packer/key.json",
+            "folder_id": "folder_id",
             "source_image_family": "ubuntu-1604-lts",
-            "image_name": "reddit-base-{{timestamp}}",
+            "image_name": "db-base-{{timestamp}}",
             "image_family": "reddit-base",
             "ssh_username": "ubuntu",
-            "platform_id": "standard-v1",
-            "use_ipv4_nat": "true"
+            "platform_id": "standard-v3",
+            "use_ipv4_nat": true
         }
     ],
     "provisioners": [
         {
-            "type": "shell",
-            "script": "scripts/install_mongodb.sh",
-            "execute_command": "sudo {{.Path}}"
+            "type": "ansible",
+            "playbook_file": "ansible/packer_db.yml"
         }
     ]
 }
