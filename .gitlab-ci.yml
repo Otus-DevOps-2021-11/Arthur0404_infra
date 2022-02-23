@@ -49,7 +49,7 @@ branch review:
     - branches
   except:
     - master
-    -
+
 staging:
   stage: stage
   when: manual
